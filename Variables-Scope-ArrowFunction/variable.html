@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Variable Scoping Arrow function</title>
+</head>
+<body>
+  <script>
+    //1. declaring variable using var and let
+    var a = 1;
+    var a = 2;
+    console.log(a); //logs 2 and no error
+
+    let b = 3;
+    //let b = 5; //error, can not redeclare
+
+    //2. var scoping
+    // var name = 'John';
+    // console.log(name); //This logs 'John'
+
+    //name is a native property lives in window scope
+    //if we use function to wrap around var variable declaration
+    //you will see different output
+    (function() {
+      var name = 'John';
+    })();
+    console.log(name); //This logs ""
+
+
+    //3. Arrow function implicit return 
+    //if no {} around the statement, it implicit return that statement without return keyword
+    let array = ['a', 'b', 'c'];
+    let sayHello = array.map((i) => `Hello ${i}!`);
+    console.log(sayHello);
+  </script>
+</body>
+</html>
