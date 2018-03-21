@@ -5,6 +5,10 @@
 - const you can not reassign value. However, if const variable is an object, you can change properties of the object
 - some people use function(){} to wrap around javascript code is to avoid leaking to global scope
 
+#### Temporal Dead Zone
+- Accessing a var before it is declared has the result undefined; accessing a let or const before it is declared throws ReferenceError
+
+
 ### Arrow function
 
 - Arrow function is always an anonymous function
