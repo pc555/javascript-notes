@@ -1,7 +1,7 @@
-###ES6 classes
+### ES6 classes
 
 ## Class, Function and Property Declaration
-
+```javascript
 class Person {
   // use constructor keyword to initialize values
   constructor(name, age) { 
@@ -34,9 +34,9 @@ class Person {
     return this.nick;
   }
 }
-
+```
 ## Inheritance using extends
-
+```javascript
 class Baby extends Person {
   constructor(name) {
     super(name, 1); //use super keyword to call Person's constructor
@@ -49,3 +49,4 @@ class Baby extends Person {
   
   //Baby still has eat() function since it inherit Person's function
 }
+```
